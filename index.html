@@ -1,341 +1,524 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FIREBRAND</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <section class="nav" id="nav">
-        <nav>
-            <ul class="sidebar">
-                <li class="sidebar-close">
-                    <button type="button" class="icon-button" onclick="hideSidebar()" aria-label="Close navigation menu"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button>
-                </li>
-               <li><a href="#nav" onclick="hideSidebar()">Home</a></li>
-               <li><a href="#about" onclick="hideSidebar()">About</a></li>
-               <li><a href="#service" onclick="hideSidebar()">Services</a></li>
-               <li><a href="#minister" onclick="hideSidebar()">Ministers</a></li>
-               <li><a href="#contact" onclick="hideSidebar()">Contact</a></li>
-            </ul>
-            <ul class="nav-links">
-               <li class="myth">
-                <img class="brand-logo" src="asset/image/rccg logo 1.png" alt="Firebrand logo">
-                <h2>Firebrand<br> Model Parish</h2>
-               </li>
-               <li class="hideOnMobile"><a href="#nav">Home</a></li>
-               <li class="hideOnMobile"><a href="#about">About</a></li>
-               <li class="hideOnMobile"><a href="#service">Services</a></li>
-               <li class="hideOnMobile"><a href="#minister">Ministers</a></li>
-               <li class="hideOnMobile"><a href="#contact">Contact</a></li>
-               <li class="menu-button"><button type="button" class="icon-button" onclick="showsSidebar()" aria-label="Open navigation menu"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" /></svg></button></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul class="sidebar">
+          <li class="sidebar-close">
+            <button
+              type="button"
+              class="icon-button"
+              onclick="hideSidebar()"
+              aria-label="Close navigation menu"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#1f1f1f"
+              >
+                <path
+                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li><a href="#nav" onclick="hideSidebar()">Home</a></li>
+          <li><a href="#about" onclick="hideSidebar()">About</a></li>
+          <li><a href="#service" onclick="hideSidebar()">Services</a></li>
+          <li><a href="#minister" onclick="hideSidebar()">Ministers</a></li>
+          <li><a href="#contact" onclick="hideSidebar()">Contact</a></li>
+        </ul>
+        <ul class="nav-links">
+          <li class="myth">
+            <img
+              class="brand-logo"
+              src="asset/image/rccg logo 1.png"
+              alt="Firebrand logo"
+            />
+            <h2>
+              Firebrand<br />
+              Model Parish
+            </h2>
+          </li>
+          <li class="hideOnMobile"><a href="#nav">Home</a></li>
+          <li class="hideOnMobile"><a href="#about">About</a></li>
+          <li class="hideOnMobile"><a href="#service">Services</a></li>
+          <li class="hideOnMobile"><a href="#minister">Ministers</a></li>
+          <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+          <li class="menu-button">
+            <button
+              type="button"
+              class="icon-button"
+              onclick="showsSidebar()"
+              aria-label="Open navigation menu"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#1f1f1f"
+              >
+                <path
+                  d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+                />
+              </svg>            </button>
+          </li>
+        </ul>
+      </nav>
     </section>
     <script>
-        function showsSidebar(){
-        const sidebar = document.querySelector('.sidebar');
-        sidebar.style.display = 'flex';
+      function showsSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
       }
-     
-        function hideSidebar(){
-        const sidebar = document.querySelector('.sidebar');
-        sidebar.style.display = 'none';
+
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
       }
     </script>
-    <section class="hero" id="nav" style="background-image: url(asset/image/Screenshot_20260214-152416_Chrome.jpg);">
-        <div class="header">
-            <h2>WELCOME TO <br><span>FIREBRAND</span></h2>
-            <p>A place where faith comes alive, lives are transformed, and everyone is welcome. Join us this Sunday as we worship, grow, and serve together.</p>
-            <a href="#about">Know more</a>
-        </div>
+
+    <section
+      class="hero"
+      id="nav"
+      style="
+        background-image: url(asset/image/Screenshot_20260214-152416_Chrome.jpg);
+      "
+    >
+      <div class="header">
+        <h2>WELCOME TO <br /><span>FIREBRAND</span></h2>
+        <p>
+          A place where faith comes alive, lives are transformed, and everyone
+          is welcome. Join us this Sunday as we worship, grow, and serve
+          together.
+        </p>
+        <a href="#about">Know more</a>
+      </div>
     </section>
-<hr style="margin: 0; border: none; border-top: 1px solid #da1c1c;">
+    <hr style="margin: 0; border: none; border-top: 1px solid #da1c1c" />
     <!-- ABOUT US -->
-     <div class="preset">
-        <h1 style="text-align: center;background: #F5F5F5;margin-top: 20px;">ABOUT US</h1>
-     </div>  
-     <section class="about" id="about">
-        <div class="about-content">
-            <p class="section-tag">WHO WE ARE</p>
-            <h2>ABOUT FIREBRAND MODEL PARISH</h2>
-            <p><strong>Firebrand Model Parish</strong> is a vibrant Christian community devoted to spiritual growth, unity, and joyful service. We are building a welcoming environment where people can grow in faith, form meaningful relationships, and encounter God in a real way.</p>
-            <p>Our mission is to ignite the fire of God's love in every heart and empower people to live out their faith with boldness, compassion, and purpose.</p>
-            <ul class="about-points">
-                <li>Christ-centered worship that draws people closer to God</li>
-                <li>A warm community where lives are nurtured and strengthened</li>
-                <li>Practical teaching that inspires faith-filled living every day</li>
-            </ul>
-        </div>
-        <div class="about-image-wrap">
-            <img src="./asset/image/Screenshot_20260214-190502_Chrome.jpg" alt="Members of Firebrand Model Parish gathered together" class="chris" loading="lazy">
-        </div>
+    <div class="preset">
+      <h1 style="text-align: center; background: #f5f5f5; margin-top: 20px">
+        ABOUT US
+      </h1>
+    </div>
+    <section class="about" id="about">
+      <div class="about-content">
+        <p class="section-tag">WHO WE ARE</p>
+        <h2>ABOUT FIREBRAND MODEL PARISH</h2>
+        <p>
+          <strong>Firebrand Model Parish</strong> is a vibrant Christian
+          community devoted to spiritual growth, unity, and joyful service. We
+          are building a welcoming environment where people can grow in faith,
+          form meaningful relationships, and encounter God in a real way.
+        </p>
+        <p>
+          Our mission is to ignite the fire of God's love in every heart and
+          empower people to live out their faith with boldness, compassion, and
+          purpose.
+        </p>
+        <ul class="about-points">
+          <li>Christ-centered worship that draws people closer to God</li>
+          <li>A warm community where lives are nurtured and strengthened</li>
+          <li>
+            Practical teaching that inspires faith-filled living every day
+          </li>
+        </ul>
+      </div>
+      <div class="about-image-wrap">
+        <img
+          src="./asset/image/Screenshot_20260214-190502_Chrome.jpg"
+          alt="Members of Firebrand Model Parish gathered together"
+          class="chris"
+          loading="lazy"
+        />
+      </div>
     </section>
-    
+
     <!-- services -->
     <section class="services" id="service">
-        <div class="service-content">
-            <p class="section-tag">WORSHIP WITH US</p>
-            <h2>OUR SERVICES</h2>
-            <p>We offer Christ-centered gatherings that help people worship deeply, grow in faith, and build meaningful community. Whether you are visiting for the first time or looking for a church family, there is room for you here.</p>
-        </div>
-        
-        <ul class="service-list">
-            <li class="flyer"><img src="./asset/image/1000003868-01.jpeg" alt="Firebrand service flyer one" loading="lazy"></li>
-            <!-- <li class="flyer"><img src="./assest/image/1000024648-01.jpeg" alt=""></li> -->
-            <li class="flyer"><img src="./asset/image/1000051418-01.jpeg" alt="Firebrand service flyer two" loading="lazy"></li>
-            <li class="flyer"><img src="./asset/image/1000060652-01.jpeg" alt="Firebrand service flyer three" loading="lazy"></li>
-            <li class="flyer"><img src="./asset/image/1000118645-01.jpeg" alt="Firebrand service flyer four" loading="lazy"></li>
-            <li class="flyer"><img src="./asset/image/1000187063-01.jpeg" alt="Firebrand service flyer five" loading="lazy"></li>
-            <li class="flyer"><img src="./asset/image/1000232670-01.jpeg" alt="Firebrand service flyer six" loading="lazy"></li>
-            <li class="flyer"><img src="./asset/image/1000285121-01.jpeg" alt="Firebrand service flyer seven" loading="lazy"></li>
-            <!-- <li class="flyer"><img src="./assest/image/1000285772-01.jpeg" alt=""></li> -->
-        </ul>
-        
+      <div class="service-content">
+        <p class="section-tag">WORSHIP WITH US</p>
+        <h2>OUR SERVICES</h2>
+        <p>
+          We offer Christ-centered gatherings that help people worship deeply,
+          grow in faith, and build meaningful community. Whether you are
+          visiting for the first time or looking for a church family, there is
+          room for you here.
+        </p>
+      </div>
+
+      <ul class="service-list">
+        <li class="flyer">
+          <img
+            src="./asset/image/1000003868-01.jpeg"
+            alt="Firebrand service flyer one"
+            loading="lazy"
+          />
+        </li>
+        <!-- <li class="flyer"><img src="./assest/image/1000024648-01.jpeg" alt=""></li> -->
+        <li class="flyer">
+          <img
+            src="./asset/image/1000051418-01.jpeg"
+            alt="Firebrand service flyer two"
+            loading="lazy"
+          />
+        </li>
+        <li class="flyer">
+          <img
+            src="./asset/image/1000060652-01.jpeg"
+            alt="Firebrand service flyer three"
+            loading="lazy"
+          />
+        </li>
+        <li class="flyer">
+          <img
+            src="./asset/image/1000118645-01.jpeg"
+            alt="Firebrand service flyer four"
+            loading="lazy"
+          />
+        </li>
+        <li class="flyer">
+          <img
+            src="./asset/image/1000187063-01.jpeg"
+            alt="Firebrand service flyer five"
+            loading="lazy"
+          />
+        </li>
+        <li class="flyer">
+          <img
+            src="./asset/image/1000232670-01.jpeg"
+            alt="Firebrand service flyer six"
+            loading="lazy"
+          />
+        </li>
+        <li class="flyer">
+          <img
+            src="./asset/image/1000285121-01.jpeg"
+            alt="Firebrand service flyer seven"
+            loading="lazy"
+          />
+        </li>
+        <!-- <li class="flyer"><img src="./assest/image/1000285772-01.jpeg" alt=""></li> -->
+      </ul>
     </section>
 
-
- <!-- MINISTER -->
-<section class="minister" id="minister">
-    <div class="minister-content">
-      <p class="section-tag">LEADERSHIP</p>
-      <h2>OUR MINISTERS</h2>
-      <p>Meet the leaders serving our church community with faith, wisdom, and a heart for people.</p>
-    </div>
-    <div class="minister-grid">
+    <!-- MINISTER -->
+    <section class="minister" id="minister">
+      <div class="minister-content">
+        <p class="section-tag">LEADERSHIP</p>
+        <h2>OUR MINISTERS</h2>
+        <p>
+          Meet the leaders serving our church community with faith, wisdom, and
+          a heart for people.
+        </p>
+      </div>
+      <div class="minister-grid">
         <article class="minister-card">
-            <img src="./asset/image/pastor.jpg" alt="Pastor Christopher Akinboyewa" loading="lazy">
-           <div class="minister-info">
+          <img
+            src="./asset/image/pastor.jpg"
+            alt="Pastor Christopher Akinboyewa"
+            loading="lazy"
+          />
+          <div class="minister-info">
             <h3>Pastor Christopher Akinboyewa</h3>
             <p>APICP ADMIN</p>
-           </div>
+          </div>
         </article>
 
         <article class="minister-card">
-            <img src="./asset/image/m.ds.jpg" alt="Pst. Mrs. Mercy Akinboyewa" loading="lazy">
-           <div class="minister-info">
+          <img
+            src="./asset/image/m.ds.jpg"
+            alt="Pst. Mrs. Mercy Akinboyewa"
+            loading="lazy"
+          />
+          <div class="minister-info">
             <h3>Pst. Mrs. Mercy Akinboyewa</h3>
             <p>Pastor</p>
-           </div>
+          </div>
         </article>
 
         <article class="minister-card">
-            <img src="./asset/image/okewoye.jpg" alt="Pastor Okewole" loading="lazy">
-           <div class="minister-info">
+          <img
+            src="./asset/image/okewoye.jpg"
+            alt="Pastor Okewole"
+            loading="lazy"
+          />
+          <div class="minister-info">
             <h3>Pastor Okewole</h3>
             <p>Assistant Pastor</p>
-           </div>
+          </div>
         </article>
 
         <article class="minister-card">
-            <img src="./asset/image/julius.jpg" alt="Deacon Julius Onayemi" loading="lazy">
-           <div class="minister-info">
+          <img
+            src="./asset/image/julius.jpg"
+            alt="Deacon Julius Onayemi"
+            loading="lazy"
+          />
+          <div class="minister-info">
             <h3>Deacon Julius Onayemi</h3>
             <p>Deacon</p>
-           </div>
+          </div>
         </article>
 
         <article class="minister-card">
-            <img src="./asset/image/owolabi.jpg" alt="Pastor Owolabi" loading="lazy">
-           <div class="minister-info">
+          <img
+            src="./asset/image/owolabi.jpg"
+            alt="Pastor Owolabi"
+            loading="lazy"
+          />
+          <div class="minister-info">
             <h3>Pastor Owolabi</h3>
             <p>Minister</p>
-           </div>
+          </div>
         </article>
 
         <article class="minister-card">
-            <img src="./asset/image/cmm.jpg" alt="Min. Omayemi Omolola" loading="lazy">
-           <div class="minister-info">
+          <img
+            src="./asset/image/cmm.jpg"
+            alt="Min. Omayemi Omolola"
+            loading="lazy"
+          />
+          <div class="minister-info">
             <h3>Min. Omayemi Omolola</h3>
             <p>Choir Coordinator</p>
-           </div>
+          </div>
         </article>
 
         <article class="minister-card">
-            <img src="./asset/image/cm.jpg" alt="Mr. Johnson Ibironke" loading="lazy">
-           <div class="minister-info">
+          <img
+            src="./asset/image/cm.jpg"
+            alt="Mr. Johnson Ibironke"
+            loading="lazy"
+          />
+          <div class="minister-info">
             <h3>Mr. Johnson Ibironke</h3>
             <p>Cephas Manager</p>
-           </div>
+          </div>
         </article>
 
         <article class="minister-card">
-            <img src="./asset/image/mr president.jpg" alt="Bro. Amos Daniel" loading="lazy">
-           <div class="minister-info">
+          <img
+            src="./asset/image/mr president.jpg"
+            alt="Bro. Amos Daniel"
+            loading="lazy"
+          />
+          <div class="minister-info">
             <h3>Bro. Amos Daniel</h3>
             <p>Youth President</p>
-           </div>
+          </div>
         </article>
-    </div>
-</section>
-
-
-<!-- CONTACT -->
- <section class="contact" id="contact">
-    <div class="form-header">
-      <p class="section-tag">GET IN TOUCH</p>
-      <h2>Join Our Church Family</h2>
-      <p>Fill out the form below and let us know how we can connect with you.</p>
-    </div>
-
-    <div class="contact-slide">
-      <div class="form-section">
-        <div class="form-body">
-          <form action="#" method="POST">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="firstName">First Name</label>
-                <input type="text" id="firstName" name="firstName" required>
-              </div>
-              <div class="form-group">
-                <label for="lastName">Last Name</label>
-                <input type="text" id="lastName" name="lastName" required>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" required>
-            </div>
-
-            <div class="form-group">
-              <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" name="phone">
-            </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label for="preferredService">Preferred Service</label>
-                <select id="preferredService" name="preferredService">
-                  <option value="">Select Service</option>
-                  <option value="sunday">Sunday Worship (8:00 AM)</option>
-                  <option value="midweek">Bible Study (5:30 PM)</option>
-                  <option value="faith-clinic">Faith Clinic (5:30 PM)</option>
-                  <option value="prayer">Prayer Meeting</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="visit">How did you hear about us?</label>
-                <select id="visit" name="visit">
-                  <option value="">Select Option</option>
-                  <option value="friend">Friend/Family</option>
-                  <option value="online">Online/Social Media</option>
-                  <option value="google">Google Search</option>
-                  <option value="flyer">Flyer/Poster</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="message">How can we pray for you? (Optional)</label>
-              <textarea id="message" name="message" rows="4" placeholder="Share your prayer request..."></textarea>
-            </div>
-
-            <button type="submit" class="btn-submit">Submit & Join Us</button>
-          </form>
-        </div>
       </div>
+    </section>
 
-      <div class="contact-img">
-        <img src="./asset/image/welcm.jpg" alt="Firebrand welcome moment" loading="lazy">
-        <div class="contact-panel-copy">
-          <h3>You Belong Here</h3>
-          <p>We would love to welcome you, pray with you, and help you find your place in the Firebrand family.</p>
-          <ul class="contact-points">
-            <li>Friendly follow-up for first-time guests</li>
-            <li>Prayer support and next-step guidance</li>
-            <li>A simple way to stay connected with the church</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-<!-- FOOTER -->
-            <footer class="footer">
-    <div class="footer-content">
-
-      <!-- Left Section -->
-      <div class="left-section">
-        <div class="church-header">
-          <div class="logo">
-            <img src="./asset/image/rccg logo 1.png" alt="RCCG logo" class="footer-logo" loading="lazy">
-          </div>
-          <div class="footer-brand-copy">
-            <div class="church-name">RCCG Oyo</div>
-            <div class="footer-brand-mark">Firebrand Model Parish</div>
-          </div>
-        </div>
-
-        <p class="tagline">
-          Raising champions who will dominate their generation for Christ and reflecting the love of Jesus in our community.
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="form-header">
+        <p class="section-tag">GET IN TOUCH</p>
+        <h2>Join Our Church Family</h2>
+        <p>
+          Fill out the form below and let us know how we can connect with you.
         </p>
+      </div>
 
-        <div class="contact-info">
-          <div class="contact-item">
-            <i>✉️</i>
-            <span>firebrandmodelparish@gmail.com</span>
+      <div class="contact-slide">
+        <div class="form-section">
+          <div class="form-body">
+            <form action="#" method="POST">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">First Name</label>
+                  <input type="text" id="firstName" name="firstName" required />
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" id="lastName" name="lastName" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" />
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="preferredService">Preferred Service</label>
+                  <select id="preferredService" name="preferredService">
+                    <option value="">Select Service</option>
+                    <option value="sunday">Sunday Worship (8:00 AM)</option>
+                    <option value="midweek">Bible Study (5:30 PM)</option>
+                    <option value="faith-clinic">Faith Clinic (5:30 PM)</option>
+                    <option value="prayer">Prayer Meeting</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="visit">How did you hear about us?</label>
+                  <select id="visit" name="visit">
+                    <option value="">Select Option</option>
+                    <option value="friend">Friend/Family</option>
+                    <option value="online">Online/Social Media</option>
+                    <option value="google">Google Search</option>
+                    <option value="flyer">Flyer/Poster</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">How can we pray for you? (Optional)</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Share your prayer request..."
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn-submit">Submit & Join Us</button>
+            </form>
           </div>
-          <div class="contact-item">
-            <i>☎️</i>
-            <span>+2348053038107</span>
+        </div>
+
+        <div class="contact-img">
+          <img
+            src="./asset/image/welcm.jpg"
+            alt="Firebrand welcome moment"
+            loading="lazy"
+          />
+          <div class="contact-panel-copy">
+            <h3>You Belong Here</h3>
+            <p>
+              We would love to welcome you, pray with you, and help you find
+              your place in the Firebrand family.
+            </p>
+            <ul class="contact-points">
+              <li>Friendly follow-up for first-time guests</li>
+              <li>Prayer support and next-step guidance</li>
+              <li>A simple way to stay connected with the church</li>
+            </ul>
           </div>
-          <div class="contact-item">
-            <i>📍</i>
-            <span>RCCG Firebrand Model Parish, opposite Hosanah Hostel.</span>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-content">
+        <!-- Left Section -->
+        <div class="left-section">
+          <div class="church-header">
+            <div class="logo">
+              <img style="background-color: azure;"
+                src="./asset/image/rccg logo 1.png  "
+                alt="RCCG logo"
+                class="footer-logo"
+                loading="lazy"
+              />
+            </div>
+            <div class="footer-brand-copy">
+              <div class="church-name">RCCG OYO 5</div>
+              <div class="footer-brand-mark">Firebrand Model Parish</div>
+            </div>
+          </div>
+
+          <p class="tagline">
+            Raising champions who will dominate their generation for Christ and
+            reflecting the love of Jesus in our community.
+          </p>
+
+          <div class="contact-info">
+            <div class="contact-item">
+              <i>✉️</i>
+              <span>firebrandmodelparish@gmail.com</span>
+            </div>
+            <div class="contact-item">
+              <i>☎️</i>
+              <span>+2348053038107</span>
+            </div>
+            <div class="contact-item">
+              <i>📍</i>
+              <span>RCCG Firebrand Model Parish, opposite Hosanah Hostel.</span>
+            </div>
+          </div>
+
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"
+              ><img src="image/facebook.svg" alt=""
+            /></a>
+            <a href="#" aria-label="YouTube"
+              ><img
+                src="image/youtube.svg"
+                alt=""
+                style="background-color: red color"
+            /></a>
           </div>
         </div>
 
-        <div class="social-icons">
-          <a href="#" aria-label="Facebook"><img src="image/facebook.svg" alt=""></a>
-          <a href="#" aria-label="YouTube"><img src="image/youtube.svg" alt="" style="background-color:red color;"></a>
+        <!-- Right Section -->
+        <div class="right-section">
+          <!-- Quick Links -->
+          <div class="column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#nav">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#service">Services</a></li>
+              <li><a href="#minister">Ministers</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Resources -->
+          <div class="column">
+            <h3>Connect</h3>
+            <ul>
+              <li><a href="#contact">Prayer Requests</a></li>
+              <li><a href="#contact">First-Time Guests</a></li>
+              <li><a href="#service">Worship Services</a></li>
+            </ul>
+          </div>
         </div>
       </div>
 
-      <!-- Right Section -->
-      <div class="right-section">
-        <!-- Quick Links -->
-        <div class="column">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="#nav">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#service">Services</a></li>
-            <li><a href="#minister">Ministers</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+      <!-- Bottom Bar -->
+      <div class="bottom-bar">
+        <div>
+          © 2026 RCCG OYO 5 - Firebrand Model Parish. All rights reserved.
         </div>
-
-        <!-- Resources -->
-        <div class="column">
-          <h3>Connect</h3>
-          <ul>
-            <li><a href="#contact">Prayer Requests</a></li>
-            <li><a href="#contact">First-Time Guests</a></li>
-            <li><a href="#service">Worship Services</a></li>
-          </ul>
+        <div class="term">
+          <a
+            href="#"
+            style="color: #888; text-decoration: none; margin-right: 20px"
+            >Privacy Policy</a
+          >
+          <a href="#" style="color: #888; text-decoration: none"
+            >Terms of Service</a
+          >
         </div>
       </div>
-    </div>
 
-    <!-- Bottom Bar -->
-    <div class="bottom-bar">
-      <div>
-        © 2026 RCCG Oyo - Firebrand Model Parish. All rights reserved.
-      </div>
-      <div class="term">
-        <a href="#" style="color:#888; text-decoration:none; margin-right:20px;">Privacy Policy</a>
-        <a href="#" style="color:#888; text-decoration:none;">Terms of Service</a>
-      </div>
-    </div>
-
-    <!-- Scroll to Top Button -->
-    <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-      ↑
-    </button>
-  </footer>
-
-
-</body>
+      <!-- Scroll to Top Button -->
+      <button
+        class="scroll-top"
+        onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+      >
+        ↑
+      </button>
+    </footer>
+  </body>
 </html>
